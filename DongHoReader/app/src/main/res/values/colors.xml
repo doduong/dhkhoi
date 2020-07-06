@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_blue">#aaa9a5</color>
+    <color name="alert_red">#ff3700</color>
+    <color name="dhcon">#BFE7E5</color>
+    <color name="dockep">#99CC66</color>
+</resources>

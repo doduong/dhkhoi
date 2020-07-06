@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tentuyen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:editable="false"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtdanhba"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bovien"
+            android:textSize="18sp"
+            android:editable="false"
+            android:hint="Mã khách hàng" />
+
+        <EditText
+            android:id="@+id/edtsodongho"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:editable="false"
+            android:background="@drawable/bovien"
+            android:hint="Seri ĐH" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edttennguoithue"
+            android:background="@drawable/bovien"
+            android:hint="Tên khách hàng"
+            android:editable="false"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edtDiaChi"
+            android:hint="Địa chỉ"
+            android:editable="false"
+            android:textSize="18sp"
+            android:background="@drawable/bovien"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="S.Cũ"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtSocu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:editable="false"
+            android:background="@drawable/bovien"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:text="S.Mới"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtSomoi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/bovien"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <!--<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.2"
+            android:gravity="left|center"
+            android:text="M3: "
+            android:textColor="@color/black"
+            android:textSize="18sp" /> -->
+
+        <EditText
+            android:id="@+id/edttieuthu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1.5"
+            android:background="@drawable/bovien"
+            android:clickable="false"
+            android:editable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:minLines="1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="3T"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtTT3T"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.3"
+            android:editable="false"
+            android:background="@drawable/bovien"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="TB"
+            android:editable="false"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtTBTT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/bovien"
+            android:clickable="false"
+            android:editable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="18sp"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btnLuuChiSoMoi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/button_style"
+            android:text="Lưu"
+            android:textSize="18sp"
+
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="N.Đọc cũ"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="N.Đọc mới"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/edtngaydoccu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bovien"
+            android:editable="false"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:id="@+id/edtngaydocmoi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:editable="false"
+            android:background="@drawable/bovien"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="Trạng thái ĐH"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnercode"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/bovien"
+            android:drawSelectorOnTop="true" />
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:text="MĐSD"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtmdsdkh"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:editable="false"
+            android:layout_weight="5"
+            android:background="@drawable/bovien"
+            android:drawSelectorOnTop="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <EditText
+            android:id="@+id/edtSDT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/bovien"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:id="@+id/btnLuuSDT"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/button_style"
+            android:text="Cập nhật SĐT"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtghichu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bovien"
+            android:hint="Ghi chú" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp">
+                <ImageButton
+                    android:id="@+id/btncamera"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="4px"
+                    android:layout_marginRight="4px"
+                    android:layout_weight="1"
+                    android:background="@drawable/camera" />
+
+                <EditText
+                    android:id="@+id/edtghichu"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/bovien"
+                    android:hint="Ghi chú" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/picture"
+        android:scaleType="fitXY" />
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                   <Button
+                        android:id="@+id/btncall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/sym_action_call" />
+
+                    <Button
+                        android:id="@+id/btntruoc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4px"
+                        android:layout_marginRight="4px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+
+                        android:text="&lt;&lt;"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnsau"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4px"
+                        android:layout_marginRight="4px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:text=">>"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btnPrint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5px"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:text="Print"
+                        android:textColor="@color/white" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>-->
+
+
+
+
+
+
+</LinearLayout>

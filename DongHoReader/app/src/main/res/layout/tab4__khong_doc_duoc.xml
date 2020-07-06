@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/txtmain1"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="DANH SÁCH KHÔNG ĐỌC ĐƯỢC"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:typeface="sans" />
+
+        <!--<Button
+            android:id="@+id/btnxoabangtam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XÓA BẢNG TẠM"
+            android:textSize="16sp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:background="#1F66AB"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtstt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="TT"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtmaso1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mã DB"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtten1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tên ĐHK"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txttmstt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="Ghi chú"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtAnh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="Ảnh"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lstkhongdocduoc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1">
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:id="@+id/btnxoabangtam"
+             android:text="Xóa Bảng Tạm"
+             />
+
+     </LinearLayout> -->
+
+
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/spidstimkiem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:textSize="22sp" />
+
+
+            <EditText
+                android:id="@+id/edtsearchname"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            >
+
+            <Button
+                android:id="@+id/btnsearchname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                android:text="Tìm kiếm"
+                android:background="@drawable/button_style"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:id="@+id/btndocso"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_style"
+                android:text="Đọc số"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvtiledadoc"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textColor="#5fbf00"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvtilechuadoc"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#f24507"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1F66AB"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtstt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="TT"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtmaso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="Mã DB"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtten"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:text="Tên ĐHK"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:id="@+id/txttieuthu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SM1"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtten1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SM2"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lstpro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:dividerHeight="1dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

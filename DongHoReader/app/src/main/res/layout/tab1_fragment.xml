@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:typeface="sans"
+            android:textSize="35sp"
+            android:textColor="#1F66AB"
+            android:text="Danh sách đồng hồ"
+            android:gravity="center"
+            android:id="@+id/txtmain"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"
+            android:layout_marginTop="20dp"
+            android:background="#1F66AB"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="Mã số KH"
+                android:gravity="center"
+                android:id="@+id/txtmaso"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="Tên KH"
+                android:gravity="center"
+                android:id="@+id/txtten"
+                />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="Dia Chi"
+                android:gravity="center"
+                android:id="@+id/txtdiachi"
+                />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstpro1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="1dp"
+            android:padding="5dp"
+
+            >
+
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.cntt.cnhp.hpwaterbarcodereader">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icondh1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".TuyenDoc"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Report"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".ThongTinChiTiet" />
+        <activity
+            android:name=".ScannerActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".NhapSoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NhapSoBangTay"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Tab4_KhongDocDuoc" />
+        <activity android:name=".AdapterDiemDungKhongDoc" />
+        <activity android:name=".AdapterTuyenDoc" />
+        <activity android:name=".Tab_Activity_Tuan"></activity>
+    </application>
+
+</manifest>

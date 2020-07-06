@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lblheader"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@drawable/bgwater1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Danh Sách Nhóm "
+        android:textColor="#ffffff"
+        android:textSize="27sp" />
+    <ListView
+        android:id="@+id/lvnhomtuan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#95a9bc"
+        android:dividerHeight="1dp"
+
+        >
+
+    </ListView>
+
+
+</LinearLayout>
